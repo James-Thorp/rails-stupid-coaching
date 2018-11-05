@@ -1,8 +1,15 @@
 <h1>What do you want to ask?</h1>
 
+<blockquote>
+  <p><%= @questions %></p>
+  <p><em>&mdash;You</em></p>
+</blockquote>
 
-<p>Your Question is -</p> <%= @questions %>
-<p>Coach's resposne is - </p> <%= @response %>
-<p>Ask another question?</p>
+<blockquote class="blockquote-yellow">
+  <p><%= @response %></p>
+  <p><em>&mdash;Your coach</em></p>
+</blockquote>
 
+<div class="btn btn-warning">
 <%= link_to "Ask a new question", ask_path %>
+</div>
